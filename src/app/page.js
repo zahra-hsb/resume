@@ -1,9 +1,13 @@
+import PictureContainer from "@/components/PictureContainer";
 import Sidebar from "@/components/Sidebar";
 
 export default function Home() {
   return (
     <>
-      <Sidebar />
+      <section className="flex">
+        <Sidebar />
+        <PictureContainer />
+      </section>
     </>
   );
 }

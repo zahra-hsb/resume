@@ -11,6 +11,9 @@ module.exports = {
         background: "var(--background)",
         foreground: "var(--foreground)",
       },
+      boxShadow: {
+        custom: '0px 0px 15px 1px #111'
+      }
     },
   },
   plugins: [],
