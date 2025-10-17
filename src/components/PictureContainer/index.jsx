@@ -1,7 +1,7 @@
 import Image from "next/image"
 // import pic from '../../../public/pic.webp'
 // import pic from '../../../public/pic.jpg'
-import pic from '../../../public/pic1.jpg'
+import pic from '../../../public/IMG_20231225_162134_779.jpg'
 import NameTitle from "../NameTitle"
 
 const PictureContainer = () => {
