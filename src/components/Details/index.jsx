@@ -1,5 +1,7 @@
 import { SlSpeedometer } from "react-icons/sl";
 import ProgressBar from "../ProgressBar";
+// import { FaArrowAltCircleDown } from "react-icons/fa";
+import { MdOutlineKeyboardDoubleArrowDown } from "react-icons/md";
 
 const Details = () => {
     return (
@@ -30,6 +32,14 @@ const Details = () => {
                     <ProgressBar percent={82} skill={'Next.js'} />
                     <ProgressBar percent={80} skill={'Typescript'} />
                     <ProgressBar percent={80} skill={'Git'} />
+                </div>
+                <div className="">
+                    <button 
+                        className="flex flex-col items-center justify-center hover: gap-2 rounded-full p-2 backdrop-blur-md bg-opacity-15 w-[150px] fixed bottom-5 -left-[calc(150px-55%)] bg-cyan- z-50"
+                    >
+                    پروژه ها 
+                        <MdOutlineKeyboardDoubleArrowDown size={20} className="animate-bounce" />
+                    </button>
                 </div>
             </section>
         </>
