@@ -4,11 +4,11 @@ import ProgressBar from "../ProgressBar";
 const Details = () => {
     return (
         <>
-            <section className="flex h-screen flex-col py-10 w-full sm:w-1/2 px-10 gap-2 sm:gap-5">
-                <h3 className="text-3xl sm:text-6xl font-bold">رزومه</h3>
-                <div className="flex flex-col sm:gap-2 italic py-5">
+            <section className="flex h-screen flex-col py-10 w-full lg:w-1/2 px-10 gap-2 lg:gap-5">
+                <h3 className="text-3xl lg:text-6xl font-bold">رزومه</h3>
+                <div className="flex flex-col lg:gap-2 italic py-5">
                     <h5 className="text-cyan-300">Frontend Developer</h5>
-                    <span className="hidden sm:block">
+                    <span className="hidden lg:block">
                         /
                     </span>
                     {/* <h5 className="text-cyan-300">backend</h5> / */}
@@ -24,7 +24,7 @@ const Details = () => {
                 <div className="flex flex-col gap-5 justify-between h-full">
                     <div className="flex items-center gap-2">
                         <SlSpeedometer size={30} color="cyan" />
-                        <h2 className="text-xl sm:text-3xl">مهارت ها</h2>
+                        <h2 className="text-xl lg:text-3xl">مهارت ها</h2>
                     </div>
                     <ProgressBar percent={90} skill={'html/css/Javascript'} />
                     {/* <ProgressBar percent={82} skill={''} /> */}

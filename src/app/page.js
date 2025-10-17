@@ -7,13 +7,13 @@ import { MdOutlineKeyboardDoubleArrowDown } from "react-icons/md";
 export default function Home() {
   return (
     <>
-      <section className="flex items-center justify-center sm:p-10 ">
+      <section className="flex items-center justify-center lg:p-10">
         <div className="absolute z-0">
           <Particle />
         </div>
-        <section className="flex flex-col sm:flex-row absolute top-0 shadow-custom z-50 w-[90%] backdrop-blur">
+        <section className="max-w-screen-2xl mx-auto flex flex-col lg:flex-row absolute top-0 shadow-custom z-50 w-[90%] backdrop-blur">
           <Sidebar />
-          <div className="w-full flex flex-col sm:flex-row">
+          <div className="w-full flex flex-col lg:flex-row">
             <PictureContainer />
             <Details />
           </div>
