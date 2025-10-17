@@ -7,8 +7,8 @@ import NameTitle from "../NameTitle"
 const PictureContainer = () => {
     return (
         <>
-            <section className="w-1/2 relative h-screen overflow-hidden px-5 flex items-center ">
-                <Image src={pic} alt="" className="shadow-custom w-[550px]" />
+            <section className="w-full sm:w-1/2 relative sm:h-screen overflow-hidden px-5 flex items-center ">
+                <Image src={pic} alt="" className="shadow-custom w-full sm:w-[550px]" />
                 <NameTitle />
             </section>
         </>

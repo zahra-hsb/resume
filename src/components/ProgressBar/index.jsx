@@ -3,8 +3,8 @@ const ProgressBar = ({ skill, percent, }) => {
         <>
             <div className="flex flex-col gap-2">
                 <div className="flex w-full justify-between">
-                    <h3>{skill}</h3>
                     <h4 className="text-cyan">{percent}%</h4>
+                    <h3>{skill}</h3>
                 </div>
                 <div>
                     <div className="w-full h-1 bg-gray-500 rounded relative overflow-hidden">
