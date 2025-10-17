@@ -6,7 +6,7 @@ const Details = () => {
         <>
             <section className="flex h-screen flex-col py-10 w-full lg:w-1/2 px-10 gap-2 lg:gap-5">
                 <h3 className="text-3xl lg:text-6xl font-bold">رزومه</h3>
-                <div className="flex flex-col lg:gap-2 italic py-5">
+                <div className="flex flex-col lg:flex-row lg:gap-2 italic py-5">
                     <h5 className="text-cyan-300">Frontend Developer</h5>
                     <span className="hidden lg:block">
                         /
