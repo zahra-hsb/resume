@@ -19,14 +19,14 @@ export default function Home() {
           </div>
         </section>
       </section>
-      <div className="fixed bottom-5 -left-[calc(75px-50%)] z-50">
+      {/* <div className="fixed bottom-5 -left-[calc(75px-50%)] z-50">
         <button
           className="flex flex-col items-center justify-center hover: gap-2 rounded-full p-2 backdrop-blur-md bg-opacity-15 w-[150px]  bg-cyan-300"
         >
           پروژه ها
           <MdOutlineKeyboardDoubleArrowDown size={20} className="animate-bounce" />
         </button>
-      </div>
+      </div> */}
     </>
   );
 }
