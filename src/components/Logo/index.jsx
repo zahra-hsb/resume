@@ -2,7 +2,7 @@ const Logo = () => {
     return (
         <>
             <h1 className="text-cyan-400 text-3xl font-bold">
-                RN
+                ZHB
             </h1>
         </>
     )

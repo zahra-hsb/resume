@@ -7,7 +7,7 @@ const Sidebar = () => {
         <>
             <nav className="h-screen w-24 p-5 flex flex-col justify-between items-center ">
                 <Logo />
-                <Link href={''}>
+                <Link href={'https://ecomerce.storage.iran.liara.space/Zahra-Hassan-Basti-FlowCV-Resume-20251008.pdf'}>
                     <FiDownloadCloud className="w-full" size={50} color="cyan" />
                 </Link>
             </nav>
