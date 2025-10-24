@@ -67,11 +67,17 @@ const Particle = () => {
             },
 
             particles: {
+                // theme: {
+                //     name: "light",
+                //     option: {
+                //         color: "#22d3ce"
+                //     }
+                // },
                 color: {
-                    value: "#ffffff",
+                    value: "#22d3dd",
                 },
                 links: {
-                    color: "#ffffff",
+                    color: "#22d3dd",
                     distance: 250,
                     enable: true,
                     opacity: 0.4,

@@ -11,7 +11,7 @@ export default function Home() {
         <div className="absolute z-0">
           <Particle />
         </div>
-        <section className="max-w-screen-2xl mx-auto flex flex-col lg:flex-row absolute top-0 shadow-custom z-50 w-[90%] backdrop-blur">
+        <section className="bg-gray-100 bg-opacity-10 dark:bg-transparent max-w-screen-2xl mx-auto flex flex-col lg:flex-row absolute top-0 shadow-xl dark:shadow-custom z-50 w-[90%] backdrop-blur">
           <Sidebar />
           <div className="w-full flex flex-col lg:flex-row">
             <PictureContainer />

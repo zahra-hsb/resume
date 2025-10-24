@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 :root {
-  --background: #ffffff;
+  --background: #ffffff; 
   --foreground: #171717;
 }
 
@@ -11,6 +11,9 @@
   :root {
     --background: #222222;
     --foreground: #ededed;
+  }
+  #tsparticles canvas{
+    color: cyan !important;
   }
 }
 
