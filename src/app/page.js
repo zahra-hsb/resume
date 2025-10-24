@@ -11,13 +11,13 @@ export default function Home() {
         <div className="absolute z-0">
           <Particle />
         </div>
-        <section className="bg-gray-100 bg-opacity-10 dark:bg-transparent max-w-screen-2xl mx-auto flex flex-col lg:flex-row absolute top-0 shadow-xl dark:shadow-custom z-50 w-[90%] backdrop-blur">
+        {/* <section className="bg-gray-100 bg-opacity-10 dark:bg-transparent max-w-screen-2xl mx-auto flex flex-col lg:flex-row absolute top-0 shadow-xl dark:shadow-custom z-50 w-[90%] backdrop-blur">
           <Sidebar />
           <div className="w-full flex flex-col lg:flex-row">
             <PictureContainer />
             <Details />
           </div>
-        </section>
+        </section> */}
       </section>
       {/* <div className="fixed bottom-5 -left-[calc(75px-50%)] z-50">
         <button
