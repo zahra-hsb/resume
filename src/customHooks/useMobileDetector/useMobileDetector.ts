@@ -1,19 +1,27 @@
-"use client";
-import { isMobileDevice } from "@/helpers/helperFunctions";
-import { useCallback, useEffect, useState } from "react"
+"use client"
+import { useEffect, useState } from "react"
 
-const useMobileDetector = () => {
-    const [isMobile, setMobile] = useState(false)
-    useEffect(() => {
-        async function getMobileState() {
-            console.log(await isMobileDevice())
-            return await isMobileDevice() ? setMobile(true) : setMobile(false)
-        }
-        getMobileState()
-    }, [])
+export const useMobileDetector = () => {
+  const [widthWindow, setWidthWindow] = useState(768)
+  const [isMobile, setIsMobile] = useState(true)
 
-    return isMobile
+  useEffect(() => {
+    const handleResize = () => {
+      const widthWindowInsideResize = window.innerWidth
+      if (widthWindowInsideResize <= widthWindow) {
+        setIsMobile(true)
+      } else {
+        setIsMobile(false)
+      }
+    }
+
+    window.addEventListener("resize", handleResize)
+    handleResize()
+
+    return () => {
+      window.removeEventListener("resize", handleResize)
+    }
+  }, [widthWindow])
+
+  return isMobile
 }
-
-
-export default useMobileDetector
