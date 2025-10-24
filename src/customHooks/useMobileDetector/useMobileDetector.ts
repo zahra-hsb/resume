@@ -1,12 +1,13 @@
 "use client";
-import { isServerMobile } from "@/helpers/helperFunctions";
-import { useCallback, useState } from "react"
+import { isMobileDevice } from "@/helpers/helperFunctions";
+import { useCallback, useEffect, useState } from "react"
 
 const useMobileDetector = () => {
     const [isMobile, setMobile] = useState(false)
-    useCallback(() => {
+    useEffect(() => {
         async function getMobileState() {
-            return await isServerMobile() ? setMobile(true) : setMobile(false)
+            console.log(await isMobileDevice())
+            return await isMobileDevice() ? setMobile(true) : setMobile(false)
         }
         getMobileState()
     }, [])
