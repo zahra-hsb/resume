@@ -61,14 +61,14 @@ The page will auto-refresh as you edit the files.
 ### Production Build
 
 Build for production:
-\`\`\`bash
+```bash
 npm run build
 npm start
-\`\`\`
+```
 
 ## 📁 Project Structure
 
-\`\`\`
+```
 resume/
 ├── src/                    # Source code
 │   └── app/               # Next.js app directory
@@ -77,7 +77,7 @@ resume/
 ├── next.config.mjs        # Next.js configuration
 ├── jsconfig.json          # JavaScript configuration
 └── package.json           # Project dependencies
-\`\`\`
+```
 
 ## 🎨 Customization
 
