@@ -17,7 +17,6 @@ const Main = () => {
         website_link: "",
         readme_link: "",
         readme_texts: "",
-        readme: ""
     }])
     useEffect(() => {
         async function getDetails() {
@@ -27,7 +26,7 @@ const Main = () => {
         }
         getDetails()
         console.log(typeof workSamples[0].readme_texts)
-    }, [])
+    }, [workSamples])
     return (
         <section className="h-full flex items-center justify-center lg:p-10 realtive">
             <div className="absolute z-0">
