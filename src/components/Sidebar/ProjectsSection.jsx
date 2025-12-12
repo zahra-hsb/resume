@@ -33,7 +33,7 @@ const ProjectsSection = () => {
                             <p className="flex items-center gap-2 flex-wrap">
                                 <FaGlobe />
                                 لینک وبسایت: <Link href={web.website_link} target="_blank" className="text-sm font-mono text-cyan-400">{web.website_link}</Link></p>
-                            <div className="max-w-72 sm:w-auto  h-44 border rounded p-2">
+                            <div className="max-w-72 sm:w-auto lg:max-w-full h-44 border rounded p-2">
                                 <pre style={{ wordWrap: 'break-word', whiteSpace: 'pre-wrap' }} dir="ltr" className="overflow-x-auto h-full">{web.readme_texts}</pre>
                             </div>
                         </div>
