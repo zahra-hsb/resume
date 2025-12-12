@@ -7,6 +7,7 @@ import Sidebar from "../Sidebar";
 import Image from "next/image";
 import { useEffect, useState } from "react";
 import ProjectBtn from "../Projects/ProjectsBtn";
+import Link from "next/link";
 
 const Main = () => {
     const { isShowProjects } = useProjectContext()
@@ -33,20 +34,23 @@ const Main = () => {
                 <Particle />
             </div>
             {isShowProjects ?
-                <section className="bg-gray-100 bg-opacity-10 dark:bg-transparent max-w-screen-2xl mx-auto flex flex-col lg:flex-row absolute top-0 shadow-xl dark:shadow-custom z-50 w-[90%] backdrop-blur p-10">
-                    {workSamples.map((web) => (
-                        <div key={web._id} className="w-full flex items-start justify-evenly gap-5">
-                            {/* <Image alt="" src={} /> */}
-                            <div className="w-1/3 h-48 rounded border-2 border-cyan-400"></div>
-                            <div className="w-2/3 flex flex-col gap-5">
-                                <p>name: {web.name}</p>
-                                <p>github link: {web.github_link}</p>
-                                <p>website link: {web.website_link}</p>
-                                <div className="h-48">details:
-                                    <pre style={{ wordWrap: 'break-word', whiteSpace: 'pre-wrap' }} dir="ltr" className="overflow-x-auto h-full">{web.readme_texts}</pre>
+                <section className="bg-gray-100 bg-opacity-10 dark:bg-transparent max-w-screen-2xl mx-auto grid lg:grid-cols-2 gap-20 md:gap-10 static top-0 shadow-xl dark:shadow-custom z-50 w-[90%] backdrop-blur p-10 ">
+                    {workSamples.map((web, index) => (
+                        <>
+                            <div key={web._id} className="w-[70%] lg:w-full flex flex-col lg:flex-row items-center lg:items-start justify-evenly gap-5">
+                                {/* <Image alt="" src={} /> */}
+                                {/* <div className="w-full lg:w-1/3 h-48 rounded border-2 border-cyan-400"></div> */}
+                                <div className="w-[95%] lg:w-2/3 flex flex-col gap-5" dir="ltr">
+                                    <p>نام پروژه: {web.name}</p>
+                                    <p>لینک گیتهاب: <Link href={web.github_link} className="text-sm font-mono text-cyan-400">{"click me"}</Link></p>
+                                    <p>لینک وبسایت: <Link href={web.website_link} className="text-sm font-mono text-cyan-400">{web.website_link}</Link></p>
+                                    <div className="h-44 border rounded p-2">
+                                        <pre style={{ wordWrap: 'break-word', whiteSpace: 'pre-wrap' }} dir="ltr" className="overflow-x-auto h-full">{web.readme_texts}</pre>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
+                            {workSamples.length - 1 !== index && <hr className="!w-[75%] lg:hidden" />}
+                        </>
                     ))}
                 </section>
                 :
