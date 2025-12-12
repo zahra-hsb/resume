@@ -27,10 +27,10 @@ const ProjectsSection = () => {
                         {/* <div className="w-full lg:w-1/3 h-48 rounded border-2 border-cyan-400"></div> */}
                         <div className="w-[95%] lg:w-2/3 flex flex-col gap-5" dir="ltr">
                             <p>نام پروژه: {web.name}</p>
-                            <p>
+                            <p className="flex items-center gap-2">
                                 <FaGithub size={20} />
                                 لینک گیتهاب: <Link href={web.github_link} target="_blank" className="text-sm font-mono text-cyan-400">{"click me"}</Link></p>
-                            <p>
+                            <p className="flex items-center gap-2">
                                 <FaGlobe />
                                 لینک وبسایت: <Link href={web.website_link} target="_blank" className="text-sm font-mono text-cyan-400">{web.website_link}</Link></p>
                             <div className="h-44 border rounded p-2">
