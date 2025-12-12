@@ -10,7 +10,7 @@ const Main = () => {
     const { isShowProjects } = useProjectContext()
     
     return (
-        <section className="h-full flex items-center justify-center lg:p-10 realtive">
+        <section className="h-full flex items-center justify-center lg:p-10 ">
             <div className="absolute z-0">
                 <Particle />
             </div>
